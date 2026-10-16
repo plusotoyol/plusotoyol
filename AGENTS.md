@@ -66,6 +66,7 @@ When a task is finished and validation passes, the agent commits and pushes with
 - Do not merge pull requests, delete branches, rewrite history on shared branches, or change git configuration.
 - After pushing, report the branch name, the commit hash, the changed files, the validation results and the link to open a pull request.
 - Changes to `docs/contracts/`, `docs/architecture/` and `AGENTS.md` still need approval from both Burak and Ömer in the pull request.
+- The step-by-step procedure is in `docs/PUSH-REHBERI.md`. When the user says "push what I did" or points to that file, follow it.
 
 ## Scoped Vibe Coding
 
