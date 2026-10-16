@@ -1,0 +1,33 @@
+# Bağımlılıklar
+node_modules/
+
+# Derleme çıktıları
+.next/
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Ortam değişkenleri (örnekler hariç)
+.env
+.env.*
+!.env.example
+
+# Loglar
+*.log
+npm-debug.log*
+
+# Editör ve işletim sistemi
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# AI araçları (kişisel ayarlar)
+.claude/settings.local.json
+
+# Veri tabanı yerel dosyaları
+*.sqlite
+pgdata/
