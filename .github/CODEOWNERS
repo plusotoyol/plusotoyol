@@ -1,0 +1,25 @@
+# GitHub kullanıcı adlarını gerçek hesaplarla değiştirin (BURAK_GITHUB, OMER_GITHUB).
+# Sahiplik tablosu: PLUS-OTOYOL-PROJE-REHBERI.md, bölüm 15.
+
+# Varsayılan: ortak alanlar iki onay ister
+*                         @BURAK_GITHUB @OMER_GITHUB
+
+# Burak
+/frontend/                @BURAK_GITHUB
+/docs/design/             @BURAK_GITHUB
+
+# Ömer
+/backend/                 @OMER_GITHUB
+/data/                    @OMER_GITHUB
+/scripts/                 @OMER_GITHUB
+/infrastructure/          @OMER_GITHUB
+/docker-compose.yml       @OMER_GITHUB
+/docs/api/                @OMER_GITHUB
+/docs/algorithms/         @OMER_GITHUB
+/docs/data/               @OMER_GITHUB
+
+# Ortak: sözleşmeler ve mimari kararlar her iki tarafın onayını ister
+/docs/contracts/          @BURAK_GITHUB @OMER_GITHUB
+/docs/architecture/       @BURAK_GITHUB @OMER_GITHUB
+/docs/legal/              @BURAK_GITHUB @OMER_GITHUB
+/AGENTS.md                @BURAK_GITHUB @OMER_GITHUB
