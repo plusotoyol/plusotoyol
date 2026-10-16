@@ -52,6 +52,21 @@
 9. Do not introduce unnecessary dependencies.
 10. Do not change architecture without explicit approval.
 
+## Git Workflow (automatic commit and push)
+
+When a task is finished and validation passes, the agent commits and pushes without being asked again. The pull request is the human review gate.
+
+- Work only on a feature branch (`feature/...`, `chore/...`, `docs/...`, `data/...`). Never commit or push to `main` or `develop`. If the current branch is `main`, create a branch first.
+- One task = one branch = one pull request. Do not mix unrelated changes.
+- Run lint, type-check and the relevant tests before committing. If they fail, do not commit; report the failure.
+- Stage files explicitly by path. Never use `git add .` or `git add -A`.
+- Before committing, review the staged diff. Do not commit `.env` files, keys, tokens, passwords or files outside the task scope. If anything suspicious is staged, stop and report it.
+- Commit messages use a prefix: `feat:`, `fix:`, `docs:`, `chore:`, `test:`, `data:`.
+- Push the branch with `git push --set-upstream origin <branch>`. Never use `--force`; `--force-with-lease` only on the agent's own feature branch and only after a rebase.
+- Do not merge pull requests, delete branches, rewrite history on shared branches, or change git configuration.
+- After pushing, report the branch name, the commit hash, the changed files, the validation results and the link to open a pull request.
+- Changes to `docs/contracts/`, `docs/architecture/` and `AGENTS.md` still need approval from both Burak and Ömer in the pull request.
+
 ## Scoped Vibe Coding
 
 Each AI session should have a clearly defined responsibility.
