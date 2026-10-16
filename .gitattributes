@@ -1,0 +1,2 @@
+# Satır sonları: Windows ve macOS'ta aynı (LF), Prettier ile uyumlu
+* text=auto eol=lf
